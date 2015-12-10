@@ -5,8 +5,9 @@ class Fifechan < Formula
   sha256 "4a4239314ae33c5413e4d7d3e5f2f1a7e53fb596fd1480ea7443ee78041e6b2d"
 
   depends_on "cmake" => :build
-  depends_on "allegro" => :build
-  depends_on "sdl_image" => :build
+  depends_on "allegro" => :recommended
+  depends_on "sdl" => :recommended
+  depends_on "sdl_image" => :recommended
 
   def install
     system "cmake", ".", *std_cmake_args
